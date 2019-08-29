@@ -69,7 +69,7 @@
                 <apigee.profile>test</apigee.profile>
                 <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
                 <apigee.apiversion>v1</apigee.apiversion>
-                <apigee.org>maheshdevops88-eval</apigee.org>
+                <apigee.org>g.bhagya9-eval</apigee.org>
                 <apigee.env>test</apigee.env>
                 <apigee.username>${username}</apigee.username>
                 <apigee.password>${password}</apigee.password>
