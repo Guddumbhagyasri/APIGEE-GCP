@@ -8,10 +8,10 @@ steps:
   entrypoint: 'bash'
   args: ['-c', 'mvn apigee-enterprise:deploy -Ptest -Dusername=g.bhagya9@gmail.com -Dpassword=$$PASSWORD']
   dir: 'HelloWorld'
-
   secretEnv: ['PASSWORD']
-
- secrets:
+  
+ 
+secrets:
 - kmsKeyName: projects/lustrous-bonito-250717/locations/global/keyRings/Apigee-cicd/cryptoKeys/APIGEE
   secretEnv:
     PASSWORD: CiQA7O+Oy13E4yvbkxztFSng23yIhU3kczwtYMU8qYn40r622kgSKwAX3d/GMN3T0MU7YwHkYQb9BzOTRrf72zQ1Sbflmc2BcHYllTTuPOaZqro=
