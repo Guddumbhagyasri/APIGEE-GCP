@@ -11,7 +11,7 @@ steps:
 
   secretEnv: ['PASSWORD']
 
-  secrets:
-- kmsKeyName: projects/entproject-29718/locations/global/keyRings/apigee-cicd/cryptoKeys/password
+ secrets:
+- kmsKeyName: projects/lustrous-bonito-250717/locations/global/keyRings/Apigee-cicd/cryptoKeys/APIGEE
   secretEnv:
-    PASSWORD: CiQA6HuVpO4QKkUoePuaVb0n5QFUtSJPirI1H4yL+q8m6ZCoY/UmRAAG/UrWDn6IvTwnPRG/UxbAsoMAWdsawWqvk3mDrB/mL
+    PASSWORD: CiQA7O+Oy13E4yvbkxztFSng23yIhU3kczwtYMU8qYn40r622kgSKwAX3d/GMN3T0MU7YwHkYQb9BzOTRrf72zQ1Sbflmc2BcHYllTTuPOaZqro=
