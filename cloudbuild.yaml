@@ -10,7 +10,6 @@ steps:
   dir: 'HelloWorld'
   secretEnv: ['PASSWORD']
   
- 
 secrets:
 - kmsKeyName: projects/lustrous-bonito-250717/locations/global/keyRings/Apigee-cicd/cryptoKeys/APIGEE
   secretEnv:
