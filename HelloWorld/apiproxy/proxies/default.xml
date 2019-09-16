@@ -10,7 +10,7 @@
                 </Step>
             </Request>
             <Response/>
-            <Condition>(proxy.pathsuffix MatchesPath "/greetings") and (request.verb = "GET")</Condition>
+           # <Condition>(proxy.pathsuffix MatchesPath "/greetings") and (request.verb = "GET")</Condition>
         </Flow>
     </Flows>
     <HTTPProxyConnection>
