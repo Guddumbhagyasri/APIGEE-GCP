@@ -6,11 +6,11 @@
 steps:
 - name: 'gcr.io/cloud-builders/mvn'
   entrypoint: 'bash'
-  args: ['-c', 'mvn apigee-enterprise:deploy -Ptest -Dusername=g.bhagya9@gmail.com -Dpassword=$$PASSWORD']
+  args: ['-c', 'mvn apigee-enterprise:deploy -Ptest -Dusername=g.bhagya9@gmail.com -Dpassword=ADbhagi9']
   dir: 'HelloWorld'
-  secretEnv: ['PASSWORD']
+  #secretEnv: ['PASSWORD']
   
-secrets:
-- kmsKeyName: projects/lustrous-bonito-250717/locations/global/keyRings/Apigee-cicd/cryptoKeys/APIGEE
-  secretEnv:
-    PASSWORD: CiQA7O+Oy13E4yvbkxztFSng23yIhU3kczwtYMU8qYn40r622kgSKwAX3d/GMN3T0MU7YwHkYQb9BzOTRrf72zQ1Sbflmc2BcHYllTTuPOaZqro=
+#secrets:
+#- kmsKeyName: projects/lustrous-bonito-250717/locations/global/keyRings/Apigee-cicd/cryptoKeys/APIGEE
+#  secretEnv:
+#    PASSWORD: CiQA7O+Oy13E4yvbkxztFSng23yIhU3kczwtYMU8qYn40r622kgSKwAX3d/GMN3T0MU7YwHkYQb9BzOTRrf72zQ1Sbflmc2BcHYllTTuPOaZqro=
