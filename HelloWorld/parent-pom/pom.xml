@@ -70,7 +70,7 @@
                 <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
                 <apigee.apiversion>v1</apigee.apiversion>
                 <apigee.org>gbhagya9-eval</apigee.org>
-                <apigee.env>Prod</apigee.env>
+                <apigee.env>test</apigee.env>
                 <apigee.username>${username}</apigee.username>
                 <apigee.password>${password}</apigee.password>
             </properties>
