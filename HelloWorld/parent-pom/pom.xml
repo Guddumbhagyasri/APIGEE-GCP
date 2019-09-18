@@ -64,13 +64,13 @@
     </build>
     <profiles>
         <profile>
-            <id>test</id>
+            <id>prod</id>
             <properties>
-                <apigee.profile>test</apigee.profile>
+                <apigee.profile>prod</apigee.profile>
                 <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
                 <apigee.apiversion>v1</apigee.apiversion>
                 <apigee.org>gbhagya9-eval</apigee.org>
-                <apigee.env>test</apigee.env>
+                <apigee.env>prod</apigee.env>
                 <apigee.username>${username}</apigee.username>
                 <apigee.password>${password}</apigee.password>
             </properties>
