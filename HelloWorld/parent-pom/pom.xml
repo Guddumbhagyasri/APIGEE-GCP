@@ -66,7 +66,7 @@
         <profile>
             <id>prod</id>
             <properties>
-                <apigee.profile>test</apigee.profile>
+                <apigee.profile>prod</apigee.profile>
                 <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
                 <apigee.apiversion>v1</apigee.apiversion>
                 <apigee.org>gbhagya9-eval</apigee.org>
