@@ -1,1 +1,1 @@
-sonar-scanner -D sonar.host.url=$SONAR_HOST_URL -D sonar.github.endpoint=$GITHUB_API_URL -D sonar.github.oauth=$SONAR_GITHUB_TOKEN
+sonar-scanner -D sonar.host.url=$https://sonarcloud.io/projects -D sonar.github.endpoint=$GITHUB_API_URL -D sonar.github.oauth=$SONAR_GITHUB_TOKEN
