@@ -13,7 +13,7 @@ steps:
       '--
 source=https://source.developers.google.com/projects/${vernal-period-269422}/repos/default/moveable-aliases/master/paths/',
       '--trigger-bucket=${_ROOT}-trigger',
-      '--entry-point=thumbnail',
+      '--entry-point= 'bash',
       '--project=${vernal-period-269422}'
   dir: 'HelloWorld'
   #secretEnv: ['PASSWORD']
