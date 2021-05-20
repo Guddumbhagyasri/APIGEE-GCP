@@ -1,24 +1,20 @@
-#steps:
-#- name: 'gcr.io/cloud-builders/mvn'
- # args: ['install', '-P', 'Prod']
-  #dir: 'HelloWorld'
-# TODO setup Apigee account secret using encrypted variables
-steps:
-- name: 'gcr.io/cloud-builders/mvn'
+---
+- name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
-  args: [
-      'beta', 
-      'functions',
-      'mvn apigee-enterprise:deploy -Pprod -Dusername=g.bhagya9@gmail.com -Dpassword=BhagiReddy30@$',
-      '--
-source=https://source.developers.google.com/projects/${vernal-period-269422}/repos/default/moveable-aliases/master/paths/',
-      '--trigger-bucket=${_ROOT}-trigger',
-      '--entry-point= 'bash',
-      '--project=${vernal-period-269422}'
-  dir: 'HelloWorld'
-  #secretEnv: ['PASSWORD']
-  
-#secrets:
-#- kmsKeyName: projects/lustrous-bonito-250717/locations/global/keyRings/Apigee-cicd/cryptoKeys/APIGEE
-#  secretEnv:
-#    PASSWORD: CiQA7O+Oy13E4yvbkxztFSng23yIhU3kczwtYMU8qYn40r622kgSKwAX3d/GMN3T0MU7YwHkYQb9BzOTRrf72zQ1Sbflmc2BcHYllTTuPOaZqro=
+
+  args:
+  - '-c'
+  - |
+
+      git fetch
+
+# Loop through all remote merged branches
+      for branch in $(git branch -r --merged | grep -v HEAD | grep -v QA | grep -v QA | grep -v QA | sed /\*/d); do
+                if [ -z "$(git log -1 --since='Apr 31, 2021' -s ${branch})" ]; then
+                                        echo -e `git show --format="%ci %cr %an" ${branch} | head -n 1` \\t$branch
+                                                        remote_branch=$(echo ${branch} | sed 's#origin/##' )
+                                                                        #git push origin --delete ${remote_branch}
+                                                                                fi
+                                                                        done
+                                                                        
+
