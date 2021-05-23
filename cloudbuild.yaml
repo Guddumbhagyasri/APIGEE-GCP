@@ -1,5 +1,5 @@
 ---
-- name: 'ubuntu'
+- name: 'gcr.io/cloud-builders/docker'
   entrypoint: 'bash'
   args:
   - '-c'
