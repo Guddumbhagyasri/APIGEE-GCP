@@ -1,8 +1,7 @@
 ---
 - name: 'gcr.io/cloud-builders/gcloud'
-  entrypoint: 'bash'
-  script:
-     - ./script.sh
+    script:
+      - ./script.sh
      
      
 
