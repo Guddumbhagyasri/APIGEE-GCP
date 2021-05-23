@@ -1,7 +1,7 @@
 ---
-- name: git remote branch deletion
-  script:
-      - ./script.sh
-     
-     
-
+pipelines:
+  default:
+    - step:          # non-parallel step
+        name: delete remote branch
+        script:
+          - ./script.sh
