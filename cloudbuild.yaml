@@ -1,5 +1,8 @@
 ---
-    - step:          # non-parallel step
-        name: delete remote branch
-        script:
-          - ./script.sh
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - |
+
+     git fetch
