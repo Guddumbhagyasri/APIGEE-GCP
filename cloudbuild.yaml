@@ -1,5 +1,4 @@
 ---
-  default:
     - step:          # non-parallel step
         name: delete remote branch
         script:
