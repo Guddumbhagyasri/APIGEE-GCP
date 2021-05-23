@@ -1,15 +1,8 @@
 ---
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
-  args:
-  - '-c'
-  - |
-
-     git fetch
-     for branch in $(git branch -r --merged | grep -v HEAD | grep -v QA | grep -v QA | grep -v QA | sed /\*/d); do
-                if [ -z "$(git log -1 --since='Apr 31, 2021' -s ${branch})" ]; then
-                    echo -e `git show --format="%ci %cr %an" ${branch} | head -n 1` \\t$branch
-                    remote_branch=$(echo ${branch} | sed 's#origin/##' )
-                 fi
-                 done
+  script:
+     - ./script.sh
+     
+     
 
