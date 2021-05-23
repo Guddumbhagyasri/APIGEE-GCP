@@ -1,5 +1,5 @@
 ---
-- name: 'gcr.io/cloud-builders/gcloud'
+- name: git remote branch deletion
     script:
       - ./script.sh
      
