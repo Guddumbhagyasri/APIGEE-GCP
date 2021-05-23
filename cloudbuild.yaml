@@ -1,6 +1,6 @@
 ---
 - name: git remote branch deletion
-    script:
+  script:
       - ./script.sh
      
      
