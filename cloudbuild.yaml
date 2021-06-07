@@ -12,10 +12,10 @@ steps:
       'mvn apigee-enterprise:deploy -Pprod -Dusername=g.bhagya9@gmail.com -Dpassword=BhagiReddy30@$',
       # mvn apigee-enterprise:deploy -Pprod -Dusername=g.bhagya9@gmail.com -Dpassword=BhagiReddy30@$
       '--
-source=https://source.developers.google.com/projects/${vernal-period-269422}/repos/default/moveable-aliases/master/paths/',
-      '--trigger-bucket=${_ROOT}-trigger',
-      '--entry-point= 'bash',
-      '--project=${vernal-period-269422}'
+#source=https://source.developers.google.com/projects/${vernal-period-269422}/repos/default/moveable-aliases/master/paths/',
+#      '--trigger-bucket=${_ROOT}-trigger',
+#      '--entry-point= 'bash',
+#      '--project=${vernal-period-269422}'
   dir: 'HelloWorld'
   #secretEnv: ['PASSWORD']
   
