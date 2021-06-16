@@ -1,13 +1,12 @@
 ---
-- name: 'gcr.io/cloud-builders/docker'
+- name: 'gcr.io/cloud-builders/git'
   entrypoint: 'bash'
   args:
   - '-c'
   - |
 
-     git fetch
+  git fetch
      
-
  # Loop through all remote merged branches
      for branch in $(git branch -r --merged | grep -v HEAD | grep -v develop | grep -v master | grep -v master | sed /\*/d); do
         if [ -z "$(git log -1 --since='Jun 15, 2020' -s ${branch})" ]; then
