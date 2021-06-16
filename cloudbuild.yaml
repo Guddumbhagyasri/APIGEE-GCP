@@ -1,10 +1,8 @@
 ---
 - name: 'gcr.io/cloud-builders/docker'
   entrypoint: 'bash'
-  args:
-  - '-c'
-  - |
-
+  args: [ "/bin/bash", "./script.sh"]
+  
     git fetch
      
  # Loop through all remote merged branches
