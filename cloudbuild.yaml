@@ -1,6 +1,8 @@
  steps:
 - name: 'gcr.io/cloud-builders/git'
-  args:[ 'c','|','git fetch']
+  entrypoint : 'bash'
+  args:
+  - '-c'
   - |
    
  #  # Loop through all remote merged branches
