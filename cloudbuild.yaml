@@ -6,4 +6,5 @@
    - |
      git clone https://github.com/Guddumbhagyasri/APIGEE-GCP.git
      cd APIGEE-GCP
-     sh script.sh
+     chmod +x script.sh
+    
