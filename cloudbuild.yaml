@@ -2,6 +2,6 @@
  - name: 'gcr.io/cloud-builders/git'
    args: ['clone', 'https://github.com/Guddumbhagyasri/APIGEE-GCP.git']
    dir : 'APIGEE-GCP'
- - name: 'gcr.io/cloud-builders/gcloud'
-   args: ['sh', 'script.sh']
+ - name: 'bash'
+   args: ['./script.sh']
     
