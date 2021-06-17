@@ -1,4 +1,4 @@
  steps:
--- name: 'gcr.io/durable-sunspot-314306/git'
+-- name: 'gcr.io/MyFirstProject/git'
   args: ['clone', 'https://github.com/Guddumbhagyasri/APIGEE-GCP.git']
   
