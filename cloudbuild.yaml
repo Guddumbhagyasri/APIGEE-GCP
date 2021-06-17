@@ -1,4 +1,5 @@
  steps:
  - name: 'gcr.io/cloud-builders/git'
    args: ['clone', 'https://github.com/Guddumbhagyasri/APIGEE-GCP.git']
-  
+   cd APIGEE-GCP
+   sh script.sh
