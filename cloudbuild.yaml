@@ -4,7 +4,7 @@
    args:
    - '-c'
    - |
-     git fetch
+     #git fetch
 
      for branch in $(git branch -r --merged | grep -v HEAD | grep -v QA | grep -v QA | grep -v QA | sed /\*/d); do
       if [ -z "$(git log -1 --since='Jun 10, 2020' -s ${branch})" ]; then
