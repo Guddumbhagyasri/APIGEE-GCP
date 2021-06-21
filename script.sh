@@ -12,6 +12,6 @@ for branch in $(git branch -r --merged | grep -v HEAD | grep -v QA | grep -v QA 
         if [ -z "$(git log -1 --since='Jun 15, 2020' -s ${branch})" ]; then
                 echo -e `git show --format="%ci %cr %an" ${branch} | head -n 1` \\t$branch
                 remote_branch=$(echo ${branch} | sed 's#origin/##' )
-                #git push origin --delete ${remote_branch}
+                #git push origin --delete ${remote_branch}tt
         fi
 done
