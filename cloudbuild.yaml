@@ -15,7 +15,7 @@
 
      # Loop through all remote merged branches
      git branch -r --merged  | grep -v HEAD | grep -v QA | grep -v QA | sed /\*/d 
-     git log -1 --since='Jun 22, 2021' -s ${branch})"
+     git log -1 --since='Jun 22, 2021' -s ${branch}
      #then echo -e `git show --format="%ci %cr %an" ${branch} | head -n 1` \\t$branch]; done                                                 
      #for branch in $(git branch -r --merged | grep -v HEAD | grep -v QA | grep -v QA | grep -v QA | sed /\*/d); do [ "$(git log -1 --since='Jun 22, 2021' -s ${branch})" ]; echo -e `git show --format="%ci %cr %an" ${branch} | head -n 1` \\t$branch] remote_branch=$(echo ${branch} | sed 's#origin/##' )]; done
      # if [ -z "$(git log -1 --since='Jun 10, 2020' -s ${branch})" ]; then
