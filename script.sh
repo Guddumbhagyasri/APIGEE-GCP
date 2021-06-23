@@ -6,6 +6,7 @@
 
 # Fetch the remote resources
 git fetch
+git pull
 
 # Loop through all remote merged branches
 for branch in $(git branch -r --merged | grep -v HEAD | grep -v QA | grep -v QA | grep -v master | sed /\*/d); do
