@@ -1,7 +1,5 @@
+steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
-  args:
-  - '-c'
-  - |
-    ./script.sh
+  args: ['APIGEE-GCP/script.sh']
     
